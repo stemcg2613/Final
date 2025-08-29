@@ -1,0 +1,58 @@
+.container {
+  display: flex;
+  flex-direction: column; 
+  gap: 1.25rem;
+}
+.content {
+  display: flex;
+  flex-direction: column; 
+}
+
+/* Phones: up to 767px */
+@media (max-width: 767px) {
+  header h1 { font-size: 1.8rem; }
+}
+
+/* Tablets: 768px to 1024px */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .content {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .post {
+    flex: 1 1 50%;
+  }
+}
+
+/* Desktops: 1025px and up */
+@media (min-width: 1025px) {
+  .container { flex-direction: row; }
+  .content { flex: 2; flex-direction: row; }
+  .contact { flex: 1; position: sticky; top: 5rem; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+header h1 {
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+nav a {
+  transition: background-color 0.25s ease, transform 0.2s ease;
+}
+nav a:hover {
+  background-color: rgba(59, 130, 246, 0.25);
+  transform: translateY(-2px);
+}
+
+:root {
+  --bg: #add8e6;   /* baby blue */
+  --panel: #ffffff; /* light panels so text is readable */
+  --ink: #003366;  /* dark navy text */
+  --muted: #555555;
+  --brand: #3b82f6;
+  --brand-2: #22c55e;
+}
