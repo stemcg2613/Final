@@ -49,9 +49,9 @@ nav a:hover {
 }
 
 :root {
-  --bg: #add8e6;   /* baby blue */
-  --panel: #ffffff; /* light panels so text is readable */
-  --ink: #003366;  /* dark navy text */
+  --bg: #add8e6;  
+  --panel: #ffffff; 
+  --ink: #003366;   
   --muted: #555555;
   --brand: #3b82f6;
   --brand-2: #22c55e;
